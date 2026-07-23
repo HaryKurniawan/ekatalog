@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Minimalist Light Theme with Corporate Blue */
+  --color-background: #F9FAFB;
+  --color-surface: #FFFFFF;
+  --color-surface-hover: #F3F4F6;
+  --color-border: #E5E7EB;
+  
+  --color-text-primary: #111827;
+  --color-text-secondary: #4B5563;
+  --color-text-muted: #9CA3AF;
+
+  --color-accent: #254874;
+  --color-accent-muted: rgba(37, 72, 116, 0.1);
+  --color-success: #059669;
+  --color-success-muted: rgba(5, 150, 105, 0.1);
+  --color-warning: #D97706;
+  --color-warning-muted: rgba(217, 119, 6, 0.1);
+  --color-danger: #DC2626;
+  --color-danger-muted: rgba(220, 38, 38, 0.1);
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--color-background)] text-[var(--color-text-primary)] antialiased font-sans selection:bg-[var(--color-accent)] selection:text-white;
+  }
+}
+
+/* Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}

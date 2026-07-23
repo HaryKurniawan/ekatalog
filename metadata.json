@@ -1,0 +1,6 @@
+{
+  "name": "e-Katalog Internal PTS (APTISI)",
+  "description": "Simulasi e-Katalog pengadaan internal untuk kampus anggota APTISI dengan role approval berjenjang.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
